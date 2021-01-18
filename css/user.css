@@ -1,0 +1,215 @@
+/* 头部的搜索框样式编写 */
+.header-nav{
+    width:100%;
+    height:60px;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 0 3px 5px #ccc;
+}
+.header--logo{
+    float: left;
+    height:60px;
+}
+.header-search{
+    float: right;
+    margin-top: 5px;
+}
+#search{
+    width:250px;
+    height:50px;
+    border:1px solid #999;
+    background:#eee;
+    /* 外边线删除 */
+    outline: none;
+    padding-left:5px;
+    font-size: 18px;
+    border-radius: 5px 0 0 5px;
+    float: left;
+}
+#search--btn{
+    width:80px;
+    height:52px;
+    background:#208EDA;
+    border:1px solid #208EDA;
+    outline: none;
+}
+#search--btn:hover{
+    cursor: pointer;
+    background:#219cf5;
+}
+/* 用户主体内容区修饰 */
+#content{
+    padding-top: 10px;
+    background:#f1f1f1;
+    padding-bottom: 10px;
+}
+.content-bg{
+    width:100%;
+    height: 160px;
+    background:url("../img/nav.jpg")no-repeat;
+}
+.content-header{
+    background:#fff;
+}
+.content-introduce{
+    height:80px;
+}
+.content-introduce img{
+    width:100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    top: -30px;
+    left: 80px;
+}
+.content-introduce h3{
+    position: relative;
+    left: 200px;
+    top: -80px;
+    width:400px;
+}
+/* 内容主体区的新闻列表样式 */
+.content-list{
+    width:80%;
+    margin:15px auto;
+    height:520px;
+    background:#fff;
+}
+.content__item{
+    height:130px;
+    padding:10px;
+    border-bottom: 1px solid #ccc;
+}
+.content__item img{
+    float: left;
+    margin-right: 20px;
+}
+.content__item h3{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.content__item p{
+    font-size: 12px;
+    color:#999;
+}
+.content__item:hover{
+    background:#eee;
+    transition: all 300ms linear;
+    cursor: pointer;
+}
+#footer{
+    font-size: 13px;
+    text-align: center;
+    padding:10px;
+    margin-top: 16px;
+    background:#fff;
+}
+#footer p{
+    margin-top: 5px;
+    color:#999;
+}
+#footer a{
+    color:#999;
+}
+/* 用户信息资料编辑 */
+.content-list .content-item{
+    padding:10px;
+    margin-left: 100px;
+}
+.content-list h3{
+    margin:10px;
+    padding-top: 10px;
+}
+.content-item .head-img{
+    width:48px;
+    height: 48px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+.content-item p{
+    margin:10px 0;
+}
+.content-item input{
+    height:30px;
+    width:200px;
+    line-height: 30px;
+    padding:5px;
+    outline: none;
+}
+.content-item textarea{
+    /* 让文本在上面显示 */
+    vertical-align: text-top;
+    outline: none;
+    padding:10px;
+}
+.update--btn{
+    background:#D04040;
+    height:50px !important;
+    line-height:50px !important;
+    color:#fff;
+    border:none;
+}
+.update--btn:hover{
+    cursor: pointer;
+    box-shadow: 0 0 3px #333;
+}
+
+/* 发表文章的CSS */
+.article-box{
+    width:80%;
+    margin:0 auto;
+    background:#fff;
+    padding:20px;
+}
+.article-title p{
+    margin:10px 0;
+}
+.title-input{
+    width:400px;
+    height:30px;
+    line-height: 30px;
+    padding:5px;
+}
+.select-input{
+    width:100px;
+    height:25px;
+}
+.article-content{
+    margin:10px 0;
+}
+.pic-detail{
+    width:200px;
+    height:50px;
+    background:#eee;
+    text-align:center;
+    line-height: 50px;
+    font-size:24px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.pic-detail:hover{
+    cursor: pointer;
+}
+.pic-intro{
+    font-size:12px;
+    color:#666;
+}
+.send--btn{
+    width:100px;
+    height:40px;
+    line-height: 40px;
+    margin-right: 30px;
+    background:#fff;
+    border:1px solid #666;
+    outline: none;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.send--active{
+    background:#D04040;
+    color:#fff;
+}
+.send--btn:hover{
+    background:#D04040;
+    color: #fff;
+    cursor: pointer;
+}

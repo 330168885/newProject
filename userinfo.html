@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>今日新闻网后台模块</title>
+    <!-- 引入我们的重置样式 -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/user.css">
+</head>
+<body>
+    <!-- 头部 -->
+    <header id="header-top">
+        <!-- 页眉区域 -->
+        <div id="top-box">
+            <div class="top-left">
+                <ul>
+                    <li><a href="">推荐</a></li>
+                    <li><a href="">热点</a></li>
+                    <li><a href="">视频</a></li>
+                    <li><a href="">图片</a></li>
+                    <li><a href="">娱乐</a></li>
+                </ul>
+            </div>
+            <div class="top-right">
+                <ul>
+                    <li><a href="">发文</a></li>
+                    <li><a href="">登陆</a></li>
+                    <li><a href="">注册</a></li>
+                    <li><a href="">反馈</a></li>
+                    <li><a href="">侵权投诉</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- 搜索区域 -->
+        <div class="header-nav">
+            <div class="middle">
+                <img src="./img/logo.png" class="header--logo" alt="">
+                <!-- 搜索框 -->
+                <div class="header-search">
+                    <input type="text" name="search" placeholder="请输入需要搜索的资讯或昵称" id="search">
+                    <input type="submit" id="search--btn" value="搜索">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 内容主体区 -->
+    <section id="content">
+        <!-- 内容主体头部 -->
+        <div class="content-header middle">
+            <div class="content-bg"></div>
+            <div class="content-introduce">
+                <img src="./img/2.jpg" alt="">
+                <h3>村长少年</h3>
+            </div>
+        </div>
+        <!-- 用户信息编辑列表 -->
+        <div class="content-list">
+            <h3>编辑资料</h3>
+            <div class="content-item">
+                <p>
+                    头像：<img src="./img/2.jpg" alt="" class="head-img">
+                    <input type="file" name="head-logo" id="">
+                </p> 
+                <p>昵称：<input type="text" name="nick" id="" value="村长少年"></p>
+                <p>
+                    介绍：
+                    <textarea name="introduce" id="" cols="30" rows="10"></textarea>
+                </p>
+                <p>
+                    <input type="button" value="修改资料" class="update--btn">
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 底部内容区 -->
+    <footer id="footer">
+        <p>© 2021 今日新闻 中国互联网举报中心京ICP证140141号京ICP备12025439号-3京公网安备 11000002002023号</p>
+        <p>
+            <a href="#">网络文化经营许可证</a>   
+            <a href="#">跟帖评论自律管理承诺书</a>
+            <a href="#">违法和不良信息举报电话：</a>400-140-2108
+            公司名称：鲸否教育科技有限公司
+        </p>
+    </footer>
+</body>
+</html>

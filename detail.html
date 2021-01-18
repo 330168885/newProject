@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新闻详情页</title>
+    <!-- 详情页CSS -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/detail.css">
+</head>
+<body>
+    <!-- 头部 -->
+    <header id="header-top">
+        <!-- 页眉区域 -->
+        <div id="top-box">
+            <div class="top-left">
+                <ul>
+                    <li><a href="">推荐</a></li>
+                    <li><a href="">热点</a></li>
+                    <li><a href="">视频</a></li>
+                    <li><a href="">图片</a></li>
+                    <li><a href="">娱乐</a></li>
+                </ul>
+            </div>
+            <div class="top-right">
+                <ul>
+                    <li><a href="">发文</a></li>
+                    <li><a href="">登陆</a></li>
+                    <li><a href="">注册</a></li>
+                    <li><a href="">反馈</a></li>
+                    <li><a href="">侵权投诉</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- 搜索区域 -->
+        <div class="header-nav">
+            <div class="middle">
+                <img src="./img/logo.png" class="header--logo" alt="">
+                <span class="detail-intro"><a href="#">首页</a>/正文</span>
+                <!-- 搜索框 -->
+                <div class="header-search">
+                    <input type="text" name="search" placeholder="请输入需要搜索的资讯或昵称" id="search">
+                    <input type="submit" id="search--btn" value="搜索">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 新闻详情页的主体部分 -->
+    <section id="content">
+        <div class="middle">
+            <!-- 新闻盒子部分 -->
+            <div class="content-detail">
+                <h1>印尼：接种中国新冠疫苗</h1>
+                <p class="detail--intro">新华网客户端2021-01-15 16:13:47</p>
+                <div class="detail-box">
+                    <img src="./img/ym.jpg" alt="">
+                    <p>
+                        1月14日起，印尼正式开始大规模分阶段为全民免费接种疫苗。印尼是东南亚地区新冠疫情较严重的国家，虽然政府和民间推出各种防疫措施，但单日新增病例数依然居高不下。印尼政府把疫苗视为战胜疫情的重要希望，并早早选择中国作为疫苗合作伙伴。数月以来，两国疫苗研发合作进度和成果远超预期，已成为两国抗疫合作的亮点之一。
+                    </p>
+                    <p>
+                        新华社发（祖卡南摄）
+                    </p>
+                    <p>
+                        【纠错】【责任编辑:李学磊 】
+                    </p>
+                </div>
+
+                <!-- 评论区 -->
+                <div class="comment-box">
+                    <h2>
+                        <span>0</span>
+                        条评论
+                    </h2>
+                    <img src="./img/1.jpg" alt="" class="user-img">
+                    <input type="text" name="comment" placeholder="请输入评论..." id="comment-say">
+                    <input type="button" value="评论" id="comment-btn">
+                    <!-- 评论列表 -->
+                    <div class="comment-list">
+                        <!-- 单个评论内容盒子开始 -->
+                        <div class="comment-item">
+                            <img src="./img/1.jpg" class="item-left" alt="">
+                            <div class="item-right">
+                                <a href="#">云淡风轻215831968</a>
+                                <span>1小时前</span>
+                                <p>国内还没普及，怎么先给其他国家了，没有那么高的思想觉悟，想不明白</p>
+                            </div>
+                        </div>
+                        <!-- 单个评论内容盒子结束 -->
+                    </div>
+                </div>
+            </div>
+            <!-- 用户介绍模块 -->
+            <div class="detail-user">
+                <img src="./img/1.jpg" alt="">
+                <span class="user--name">村长少年</span>
+                <div class="news-list">
+                    <ul>
+                        <li><a href="">黑龙江大庆发布新增确诊病例行动轨迹</a></li>
+                        <li><a href="">黑龙江大庆发布新增确诊病例行动轨迹</a></li>
+                        <li><a href="">黑龙江大庆发布新增确诊病例行动轨迹</a></li>
+                        <li><a href="">黑龙江大庆发布新增确诊病例行动轨迹</a></li>
+                        <li><a href="">黑龙江大庆发布新增确诊病例行动轨迹</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- 底部内容区 -->
+     <footer id="footer">
+        <p>© 2021 今日新闻 中国互联网举报中心京ICP证140141号京ICP备12025439号-3京公网安备 11000002002023号</p>
+        <p>
+            <a href="#">网络文化经营许可证</a>   
+            <a href="#">跟帖评论自律管理承诺书</a>
+            <a href="#">违法和不良信息举报电话：</a>400-140-2108
+            公司名称：鲸否教育科技有限公司
+        </p>
+    </footer>
+     <!-- 返回顶部盒子 -->
+     <a href="javascript:void(0);" id="return-box">
+        <img src="./img/top.jpg" alt="">
+    </a>
+    <!-- jquery库引入 -->
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/global.js"></script>
+    <script>
+        // 评论功能实现
+        $("#comment-btn").click(function(){
+            //获取评论内容
+            var say = $("#comment-say").val();
+            // 判断内容输入是否为空
+            if(say.trim() == "")
+            {
+                alert("请输入评论内容");
+                $("#comment-say").focus();
+                return;
+            }
+            //实现输入内容后，追加评论显示到下面的盒子中
+            // DOM节点生成追加  $(html标签).appendTo(指定位置) 末尾追加
+            // 前置追加：$(html标签).prependTo(指定位置) 
+            $('<div class="comment-item"><img src="'+$(".user-img").attr('src')+'" class="item-left" alt=""><div class="item-right"><a href="#">花少爷</a><span>1小时前</span><p>'+say+'</p></div></div>').prependTo(".comment-list");
+
+            //清空输入文本的值
+            $("#comment-say").val("");
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+*{
+   margin:0;
+   padding:0; 
+}
+a{
+    text-decoration: none;
+    color:#333;
+}
+ul li{
+    list-style: none;
+}
+/* 居中盒子，共用样式 */
+.middle{
+    width:80%;
+    margin:0 auto;
+}
+
+/* 今日新闻网头部公共样式 */
+#top-box{
+    width:100%;
+    height: 40px;
+    line-height: 40px;
+    background:#000;
+    overflow: hidden;
+}
+.top-right ul li,
+.top-left ul li{
+    float: left;
+    padding:0 5px;
+    font-size: 14px;
+}
+.top-right ul li a,
+.top-left ul li a{
+    color:#fff;
+}
+.top-left ul li a:hover{
+    color:#666;
+}
+.top-right{
+    float: right;
+}
+
+/* 返回按钮的样式 */
+#return-box{
+    display: block;
+    position: fixed;
+    right:30px;
+    bottom:150px;
+    width:48px;
+    height: 48px;
+    box-shadow: 0 0 3px #ccc;
+    /* 隐藏滚动按钮 */
+    display: none;
+}
+#return-box img{
+    width:24px;
+    height:24px;
+    display: block;
+    margin:10px;
+}

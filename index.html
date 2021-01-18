@@ -3,111 +3,180 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>腾讯新闻</title>
+    <title>今日新闻网首页</title>
+    <!-- 引入公共样式 -->
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
-    <div>哈哈哈哈哈</div>
-    <!-- 头部导航条 -->
-    <header id="header" class="grid">
-
-        <div class="header-logo">
-            <img src="./img/logo.png" alt="">
-        </div>
-        <div class="header-nav  grid-cell-5">
-            <ul>
-                <li><a href="" class="link--active">要闻</a></li>
-                <li><a href="">娱乐</a></li>
-                <li><a href="">财经</a></li>
-                <li><a href="">体育</a></li>
-                <li><a href="">图片</a></li>
-                <li><a href="">时尚</a></li>
-            </ul>
-        </div>
-        <!-- 登陆 -->
-        <div class="header-login grid-cell-1">
-            <a href="#">一键登陆</a>
+    <!-- 头部 -->
+    <header id="header-top">
+        <!-- 页眉区域 -->
+        <div id="top-box">
+            <div class="top-left">
+                <ul>
+                    <li><a href="">推荐</a></li>
+                    <li><a href="">热点</a></li>
+                    <li><a href="">视频</a></li>
+                    <li><a href="">图片</a></li>
+                    <li><a href="">娱乐</a></li>
+                </ul>
+            </div>
+            <div class="top-right">
+                <ul>
+                    <li><a href="">发文</a></li>
+                    <li><a href="">登陆</a></li>
+                    <li><a href="">注册</a></li>
+                    <li><a href="">反馈</a></li>
+                    <li><a href="">侵权投诉</a></li>
+                </ul>
+            </div>
         </div>
     </header>
 
-    <!-- 移动端导航条 -->
-    <div class="mobile-nav">
-        <ul class="grid">
-            <li class="grid-cell-1"><a href="" class="link--active">要闻</a></li>
-            <li class="grid-cell-1"><a href="">娱乐</a></li>
-            <li class="grid-cell-1"><a href="">财经</a></li>
-            <li class="grid-cell-1"><a href="">体育</a></li>
-            <li class="grid-cell-1"><a href="">图片</a></li>
-            <li class="grid-cell-1"><a href="">时尚</a></li>
-        </ul>
-    </div>
-
-    <!-- 主体内容 -->
-    <section id="content" class="grid">
-        <!-- 文章主体 -->
-        <div class="article grid-cell-4">
-            <h1>让我们一起“加油”吧！年内油价最大幅上涨将至</h1>
-            <p>经济日报-中国经济网北京12月2日讯（记者王婉莹） 12月3日24时（周五0点），国内成品油调价或迎“两连涨”，这也将是本年内最大幅度的上调。</p>
-            <p>11月份，国际油价连涨4周。本轮调价周期内变化率呈现正向波动，欧佩克与非欧佩克产油国（OPEC+）正在考虑各种选项，以期在明年1月把770万桶/日的减产量缩减约200万桶/日的计划，至少再延长三个月。但是目前，石油输出国组织（OPEC）各成员国在延长减产期限议题上尚未达成一致，等待周二（12月1日）会议做出进一步决定。</p>
-            <p>受此影响，截至11月30日，美国WTI原油期货市场价格小幅下跌，主力合约价报45.34美元/桶，跌幅0.19美元；布伦特原油期货市场价格小幅上涨，主力合约结算价报47.88美元/桶，涨幅0.04美元。</p>
-            <p>从目前来看，本轮调降已是无望。</p>
-            <p>据多家机构测算，11月30日，原油综合变化率为6.36%，对应上调幅度为220元/吨，折合每升上调0.18元左右。</p>
-            <p>隆众资讯油品分析师李彦表示，预计到12月3日，国内成品油调价对应理论上调幅度约为250元/吨。</p>
-            <p>如果这250元的调升正式落地，意味着年内最大幅度的油价上调就要来了。按照私家车50L的油箱测算，需要多花费近10元钱。</p>
-            <p>据经济日报-中国经济网记者梳理，目前，2020年国内成品油调价已进行了22轮，具体为上调5次、下调5次，搁浅12次，汽油总计下调1790元/吨，柴油总计下调1725元/吨。本次调价过后，2020年的调价格局或将变为“六涨五跌十二搁浅”。</p>
+    <!-- 新闻的主体内容区 -->
+    <section id="content">
+        <!-- 左边导航 -->
+        <div class="content-nav">
+            <img src="./img/logo.png" alt="">
+            <ul>
+                <li class="active"><a href="">推荐</a></li>
+                <li><a href="">热点</a></li>
+                <li><a href="">图片</a></li>
+                <li><a href="">科技</a></li>
+                <li><a href="">娱乐</a></li>
+            </ul>
         </div>
-        <!-- 文章模块的右边 -->
-        <div class="content-right grid-cell-4">
-            <h1>相关推荐</h1>
-            <dl class="news__item">
+        <!-- 中间新闻列表 -->
+        <div class="content-list">
+            <!-- 单个新闻盒子 -->   
+            <div class="list-item">
                 <a href="#">
-                    <dt>
-                        <img src="./img/1.jpg" alt="">
-                    </dt>
-                    <dd>
-                        意外离世47岁华裔鞋王：终生未婚，房车为家，留给世界“三双鞋”
-                    </dd>
-                </a>                
-            </dl>
-            <dl class="news__item">
+                    <h3>这篇重要文章，主席这样看待时与势</h3>
+                    <div>
+                       <span>时政</span>  
+                       <img src="./img/3.jpg" alt="">新华社 ⋅ 
+                       522评论 ⋅ 1分钟前
+                    </div>
+                </a>
+            </div>
+            <!-- 单个新闻盒子结束 -->
+            <!-- 单个新闻盒子 -->   
+            <div class="list-item">
                 <a href="#">
-                    <dt>
-                        <img src="./img/2.jpg" alt="">
-                    </dt>
-                    <dd>
-                        基金高收益，你是否赚了？
-                    </dd>
-                </a>                
-            </dl>
-            <dl class="news__item">
+                    <h3>这篇重要文章，主席这样看待时与势</h3>
+                    <div>
+                       <span>时政</span>  
+                       <img src="./img/3.jpg" alt="">新华社 ⋅ 
+                       522评论 ⋅ 1分钟前
+                    </div>
+                </a>
+            </div>
+            <!-- 单个新闻盒子结束 -->
+            <!-- 单个新闻盒子 -->   
+            <div class="list-item">
                 <a href="#">
-                    <dt>
-                        <img src="./img/3.jpg" alt="">
-                    </dt>
-                    <dd>
-                        深圳房价创新高，有人一夜身价暴涨2000万
-                    </dd>
-                </a>                
-            </dl>
+                    <h3>这篇重要文章，主席这样看待时与势</h3>
+                    <div>
+                       <span>时政</span>  
+                       <img src="./img/3.jpg" alt="">新华社 ⋅ 
+                       522评论 ⋅ 1分钟前
+                    </div>
+                </a>
+            </div>
+            <!-- 单个新闻盒子结束 -->
+            <!-- 带图片的新闻列表盒子 -->
+            <div class="list-item">
+                <a href="#">
+                    <img src="./img/1.jpg" class="news--img" alt="">
+                    <h3 class="news--h3">
+                        一幅图，告诉你男女之间的区别
+                    </h3>
+                    <div>
+                        <span>时政</span>  
+                        <img src="./img/3.jpg" alt="">新华社 ⋅ 
+                        522评论 ⋅ 1分钟前
+                    </div>
+                </a>
+            </div>
+            <!-- 带图片的新闻盒子 -->
+             <!-- 带图片的新闻列表盒子 -->
+             <div class="list-item">
+                <a href="#">
+                    <img src="./img/1.jpg" class="news--img" alt="">
+                    <h3 class="news--h3">
+                        一幅图，告诉你男女之间的区别
+                    </h3>
+                    <div>
+                        <span>时政</span>  
+                        <img src="./img/3.jpg" alt="">新华社 ⋅ 
+                        522评论 ⋅ 1分钟前
+                    </div>
+                </a>
+            </div>
+            <!-- 带图片的新闻盒子 -->
+             <!-- 带图片的新闻列表盒子 -->
+             <div class="list-item">
+                <a href="#">
+                    <img src="./img/1.jpg" class="news--img" alt="">
+                    <h3 class="news--h3">
+                        一幅图，告诉你男女之间的区别
+                    </h3>
+                    <div>
+                        <span>时政</span>  
+                        <img src="./img/3.jpg" alt="">新华社 ⋅ 
+                        522评论 ⋅ 1分钟前
+                    </div>
+                </a>
+            </div>
+            <!-- 带图片的新闻盒子 -->
+        </div>
+        <!-- 右边信息展示 -->
+        <div class="content-right">
+            <!-- 搜索框 -->
+            <div class="header-search">
+                <input type="text" name="search" placeholder="请输入需要搜索的资讯或昵称" id="search">
+                <input type="submit" id="search--btn" value="搜索">
+            </div>
+            <!-- 登陆显示框 -->
+            <div class="right-login">
+                <!-- 登陆盒子 -->
+                <div class="login-box">
+                    <!-- 1、没有登陆时，显示点击登陆，可以跳转登陆 -->
+                    <a href="#" class="login--link">登陆</a>
+                    <!-- 2、显示登陆后的状态 -->
+                    <div class="login-register">
+                        <p>
+                            <a href="#">退出登陆</a>
+                        </p>
+                        <a href=""><img src="./img/3.jpg" alt=""></a>
+                        <h5><a href="#">村长少年</a></h5>
+                        <a href="#" class="send--link">发布</a>
+                    </div>                    
+                </div>
+            </div>
+            <!-- 页脚部分 -->
+            <div class="right-login">
+                <p>© 2021 今日头条</p>
+                <p>扫黄打非网上举报</p>
+                <p>网络谣言曝光台</p>
+                <p>中国互联网举报中心 京ICP证140141号</p>
+                <p>京ICP备12025439号-3 网络文化经营许可证</p>
+                <p>营业执照</p>
+                <p>违法和不良信息举报：400-140-2108</p>
+                <p>举报邮箱：jubao@toutiao.com</p>
+                <p>公司名称：鲸否教育科技有限公司</p>
+                <p>京公网安备 11000002002023号</p>
+            </div>
         </div>
     </section>
 
-    <!-- 底部版权 -->
-    <footer id="footer">
-        <ul>
-            <li><a href="">关于腾讯</a></li>
-            <li><a href="">服务协议</a></li>
-            <li><a href="">联系我们</a></li>
-            <li><a href="">地图</a></li>
-            <li><a href="">关于我们</a></li>
-            <li><a href="">网站导航</a></li>
-        </ul>
-        <a href="#" class="copyright">copyright Tengcent 1999-2020</a>  
-    </footer>
-
-    <!-- 右侧返回顶部按钮 -->
-    <div class="top-box">
-       <a href="#">返回顶部</a> 
-    </div>
+    <!-- 返回顶部盒子 -->
+    <a href="javascript:void(0);" id="return-box">
+        <img src="./img/top.jpg" alt="">
+    </a>
+    <!-- jquery库引入 -->
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/global.js"></script>
 </body>
 </html>

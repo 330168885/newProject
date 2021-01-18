@@ -1,0 +1,73 @@
+body{
+    background:url("../img/bg.png")no-repeat;
+}
+#login-box{
+    width:400px;
+    height: 300px;
+    padding:10px;
+    background: #fff;
+    border-radius: 5px;
+    position: fixed;
+    top:50%;
+    left:50%;
+    margin-top: -150px;
+    margin-left: -200px;
+}
+#login-box h3{
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#login-box .active,
+#login-box p a:hover{
+    padding-bottom: 5px;
+    border-bottom: 2px solid red;
+    color:red;
+    font-weight: bold;
+    margin-right: 5px;
+}
+/* 登陆框样式编写 */
+.login-register{
+    font-size: 14px;
+    margin-top: 20px;
+}
+.login-register input{
+    width:300px;
+    height:30px;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+/* ctrl+D 选中多个相同的关键字，进行选中 */
+.login-register span{
+    color:blue;
+}
+.login-register a{
+    color:blue;
+}
+.login-register a:hover{
+    color:red;
+}
+.login--rem{
+    margin-left: 30px;
+}
+#login__btn,
+#register__btn{
+    margin-left: 50px;
+    background:rgb(231, 77, 77);
+    border:none;
+    border-radius: 5px;
+    height:50px;
+    line-height: 50px;
+    color:#fff;
+    font-size: 20px;
+}
+#login__btn:hover,
+#register__btn:hover{
+    cursor:pointer;
+    background:rgb(243, 55, 55);
+    transition: all 400ms linear;
+}
+/* 初始化时，让注册框隐藏 */
+.login-reg{
+    display: none;
+}
